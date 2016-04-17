@@ -1,0 +1,19 @@
+{
+    "name": "mickaelandrieu/weplaymusic",
+    "description": "A small app to manage music files",
+    "require": {
+        "symfony/debug": "2.8",
+        "symfony/var-dumper": "2.8"
+    },
+    "authors": [
+        {
+            "name": "Mickaël Andrieu",
+            "email": "andrieu.travail@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+          "App\\modeles\\": "modeles/"
+        }
+    }
+}
