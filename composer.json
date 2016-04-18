@@ -13,7 +13,8 @@
     ],
     "autoload": {
         "psr-4": {
-          "App\\modeles\\": "modeles/"
+          "App\\modeles\\": "modeles/",
+          "App\\tests\\": "tests/"
         }
     }
 }
