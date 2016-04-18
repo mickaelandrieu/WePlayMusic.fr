@@ -6,9 +6,11 @@ use App\tests\TestCase;
 
 class CheckPagesAccessTest extends TestCase
 {
+    const WEBSITE_URL = "https://box-ubuntu-mickaelandrieu.c9users.io/WePlayMusic.fr/";
+    
     public function testHomePageIsAvailable()
     {
-        $this->markTestSkipped('Test need to be done');
+        $this->assertResponseOk(self::WEBSITE_URL);
     }
     
     public function testHelpPageIsAvailable()

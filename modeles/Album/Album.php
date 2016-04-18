@@ -5,7 +5,7 @@ namespace App\modeles\Album;
 class Album
 {
     /* Données membres de la classe */
-  private $id;
+    private $id;
     private $titre;
     private $auteur;
     private $fichier;
@@ -19,7 +19,7 @@ class Album
   {
 
     /* affectation des valeurs contenues dans le $map */
-    $this->id = $map['id'];
+      $this->id = $map['id'];
       $this->titre = $map['titre'];
       $this->auteur = $map['auteur'];
       $this->fichier = $map['fichier'];
@@ -154,5 +154,5 @@ class Album
   {
       $this->dateIns = $dateIns;
   }
-} // fin class Photo
+}
 ;
