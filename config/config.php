@@ -27,8 +27,15 @@ define('HELPER_FILE', BASE_FILE.'helpers/');
 /*
  * Database configuration
  */
-define('DB_CONFIG', 'config/config_db.php');
+if (!defined('DB_CONFIG')) {
+    define('DB_CONFIG', 'config/config_db.php');
+}
 
 require_once BASE_FILE.'vendor/autoload.php';
 \Symfony\Component\Debug\Debug::enable();
-require_once BASE_FILE.DB_CONFIG;
+
+if(!defined('ENV_TEST')) {
+    require_once BASE_FILE.DB_CONFIG;
+} else {
+    require_once __DIR__.'/../tests/config_test_db.php';
+}
